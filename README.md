@@ -14,3 +14,5 @@ If unnormalized, arbitrary-precision associated Legendre polynomials are too com
 The normaliztion in this crate is based on [a paper by Holmes and Featherstone](https://link.springer.com/article/10.1007/s00190-002-0216-2). 
 
 To generate normalized associated Legendre polynomials, first create a `ScalarCache`, which computes and stores constants required for normalization. Then, use `fill` or `compute` to evalute the normalized associated Legendre polynomials for a given value. 
+
+Note that the normalized associated Legendre polynomial generally uses an angle as an input, which is different than the unnormalized associated Legendre polynomial. 
